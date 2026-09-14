@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "hogwarts-light-shows"
+version = "0.1.0"
+description = "A configurable wizard-themed light-show starter with offline simulation"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+ "light-show-manager @ git+https://github.com/JimmyJammed/light-show-manager.git@7701ab60a853ba4bad359504c46d57ab26da9b2c",
+ "govee-lan-api-plus @ git+https://github.com/JimmyJammed/govee-lan-api-plus.git@a0d380b89af5bcc23cba29b312f72d3830ec15cd"
+]
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=1", "build>=1"]
+[project.scripts]
+wizard-show = "hogwarts_light_shows.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+hogwarts_light_shows = ["assets/*"]
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["src"]
