@@ -1,0 +1,7 @@
+Audio: simulated original spell tones
+ 0.00s lantern: color [255, 170, 70]
+ 0.40s lantern: brightness 80
+ 1.00s lantern: color [70, 100, 255]
+ 1.60s lantern: brightness 20
+Device state restored
+completed

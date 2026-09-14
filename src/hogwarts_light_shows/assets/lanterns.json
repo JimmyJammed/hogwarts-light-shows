@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "The Lantern Spell",
+  "duration": 2,
+  "audio": "spell.wav",
+  "roles": {"lantern": "demo-lantern"},
+  "cues": [
+    {"at": 0, "role": "lantern", "action": "color", "value": [255, 170, 70]},
+    {"at": 0.4, "role": "lantern", "action": "brightness", "value": 80},
+    {"at": 1, "role": "lantern", "action": "color", "value": [70, 100, 255]},
+    {"at": 1.6, "role": "lantern", "action": "brightness", "value": 20}
+  ]
+}
